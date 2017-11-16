@@ -13,7 +13,7 @@ govet examines Go source code and reports suspicious constructs, such as Printf 
 ### Building
 
 ```console
-./bin/build
+make image
 ```
 
 This will build a `codeclimate/codeclimate-govet` image locally
