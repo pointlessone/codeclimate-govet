@@ -6,6 +6,7 @@ RUN adduser -u 9000 -D app
 
 WORKDIR /usr/src/app
 
+COPY engine.json /engine.json
 COPY codeclimate-govet.go /usr/src/app/
 RUN apk add --no-cache git && \
     go get -t -d -v ./... && \

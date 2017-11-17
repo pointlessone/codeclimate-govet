@@ -18,6 +18,19 @@ make image
 
 This will build a `codeclimate/codeclimate-govet` image locally
 
+### Updating
+
+`govet` is a part of the Go distribution and shares version with it. Once in a
+while a new version of Go gets packaged and in order to get the latest version
+and force a new docker image build, we have to update the `engine.json` file.
+
+```console
+make update
+```
+
+This will update engine version with the latest govet version. After that
+rebuild the image as usually.
+
 ### Need help?
 
 For help with Govet, [check out their documentation](https://golang.org/cmd/vet/).
